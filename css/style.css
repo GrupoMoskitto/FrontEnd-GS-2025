@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'FontePrincipal';
+    src: url('./fonts/Anton-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.problema:hover {
+    color: #EBFFD8; 
+    font-weight: bold;
+}
