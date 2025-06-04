@@ -1,12 +1,33 @@
-@font-face {
-    font-family: 'FontePrincipal';
-    src: url('./fonts/Anton-Regular.ttf') format('truetype');
-    font-weight: normal;
+.fonte1 {
+    font-family: "Changa One", sans-serif;
+    font-weight: 100;
     font-style: normal;
 }
 
 
-.problema:hover {
+.problema:hover{
     color: #EBFFD8; 
-    font-weight: bold;
 }
+
+.solucao:hover{
+    color: #EBFFD8; 
+}
+
+.pitch:hover{
+    color: #EBFFD8; 
+}
+
+.contato:hover{
+    color: #EBFFD8; 
+}
+
+.card-animado {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+  }
+
+.card-animado.apareceu {
+    opacity: 1;
+    transform: translateY(0);
+  }
