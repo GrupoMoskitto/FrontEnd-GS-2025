@@ -30,46 +30,86 @@
     </div>
   </header>
 
-  <section class="flex justify-center text-2xl font-semibold p-5">
+  <section id="problema" class="flex justify-center text-2xl font-semibold p-5">
     <h1 class="">Problema: Enchentes Urbanas, um desafio crescente</h1>
   </section>
 
-  <section class="flex justify-center text-lg pl-20 pr-20  md:pl-50 md:pr-50" >
-    <h2> Centenas de pontos de alagamento, ruas e avenidas intransitáveis, pessoas ilhadas em carros e linhas de trens paradas. Isso infelizmente é a realidade de muitos cidadãos brasileiros, principalmente da população que habita grandes cidades. Todas essas enchentes urbanas recorrentes, agravadas pelo entupimento de bueiros, causam prejuízos materiais, riscos à saúde pública e comprometem a mobilidade urbana.
-
+  <section class="flex justify-center text-lg pl-20 pr-20 text-xl md:pl-50 md:pr-50" >
+    <h2> Centenas de pontos de alagamento, ruas e avenidas intransitáveis, pessoas ilhadas em carros e linhas de trens paradas. Isso infelizmente é a realidade de muitos cidadãos brasileiros, principalmente da população que habita grandes cidades. Todas essas enchentes urbanas recorrentes, agravadas pelo entupimento de bueiros, causam prejuízos materiais, <span class="bg-yellow-100 text-black px-1 rounded">riscos à saúde pública</span> e comprometem a mobilidade urbana.
     </h2>
   </section>
   
-
+    <!-- Card dos problemas -->
     <div class="flex flex-col md:flex-row p-10 gap-10 justify-center card-animado">
         <div class="max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden">
-            <img class="w-full h-48 object-cover" src="https://via.placeholder.com/400x200" alt="Imagem do projeto">
+            <img class="w-full h-48 object-cover" src="./assets/enchente-1.png" alt="Imagem do projeto">
             <div class="p-4">
-                <h3 class="text-xl font-semibold mb-2">Monitoramento em Tempo Real</h3>
-                <p class="text-gray-600">Nosso sistema detecta o nível da água em bueiros urbanos com ESP32, gerando alertas imediatos para prevenção de enchentes.</p>
+                <h3 class="text-xl font-semibold mb-2">São Paulo falha em evitar enchentes</h3>
+                <p class="text-gray-600"> Toda espécie de resíduos é jogada pelos bueiros da cidade. Os mais comuns são papéis de bala, sacos e embalagens plásticas, garrafas PET e restos de comida. Com todo esse lixo, não há bueiro que não entupa e consiga dar vazão à água.</p>
             </div>
         </div>
 
         <div class="max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden">
-            <img class="w-full h-48 object-cover" src="https://via.placeholder.com/400x200" alt="Imagem do projeto">
+            <img class="w-full h-48 object-cover" src="./assets/enchente-2.jpg" alt="Imagem do projeto">
             <div class="p-4">
-                <h3 class="text-xl font-semibold mb-2">Monitoramento em Tempo Real</h3>
-                <p class="text-gray-600">Nosso sistema detecta o nível da água em bueiros urbanos com ESP32, gerando alertas imediatos para prevenção de enchentes.</p>
+                <h3 class="text-xl font-semibold mb-2">Custo para o Prefeitura</h3>
+                <p class="text-gray-600">A prefeitura de Belo Horizonte declarou que no ano passado gastou R$ 6 milhões nas ações de limpeza da rede, que foi feita para recolher apenas água da chuva. O descarte irregular de lixo provocou o entupimento de 44 quilômetros de tubulação. </p>
             </div>
         </div>
 
         <div class="max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden">
-            <img class="w-full h-48 object-cover" src="https://via.placeholder.com/400x200" alt="Imagem do projeto">
+            <img class="w-full h-48 object-cover" src="./assets/enchente-3.jpg" alt="Imagem do projeto">
             <div class="p-4">
-                <h3 class="text-xl font-semibold mb-2">Monitoramento em Tempo Real</h3>
-                <p class="text-gray-600">Nosso sistema detecta o nível da água em bueiros urbanos com ESP32, gerando alertas imediatos para prevenção de enchentes.</p>
+                <h3 class="text-xl font-semibold mb-2">Danos por enchente</h3>
+                <p class="text-gray-600">Dados atualizados da SUSEP (Superintendência de Seguros Privados) revelam um dado preocupante: 35% de todas as reclamações no segmento de seguros automotivos estão relacionados a negativas de cobertura para danos por enchentes.</p>
             </div>
         </div>
-
 
     </div>
 
 
+   <section id="solucao" class="flex justify-center text-2xl font-semibold p-5">
+    <h1 class="">Descrição da solução</h1>
+  </section>
+
+  <section class="flex justify-center text-lg pl-20 pr-20 text-xl md:pl-50 md:pr-50" >
+    <h2> A solução propõe o uso do <span class="bg-yellow-100 text-black px-1 rounded">microcontrolador ESP32</span> microcontrolador ESP32 com sensores de nível de água e umidade instalados em bueiros espalhados pela cidade. Utilizando lógica embarcada, os dispositivos monitoram em tempo real o nível da água e transmitem dados via MQTT para um broker (Fiware). Os dados são exibidos em um dashboard que engloba o uso de Python e Django, que também dispara alertas quando os níveis atingem limites predefinidos. 
+    </h2>
+  </section>
+
+
+
+  <!-- Card das funcionalidades -->
+  <div class="flex flex-col sm:flex-row p-10 gap-10 justify-center items-center">
+
+    <div class="max-w-xs bg-black rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
+        <img class="w-full h-40 object-cover" src="./assets/esp32.png" alt="Imagem do projeto">
+        <div class="p-4">
+        <h3 class="text-lg text-white font-semibold mb-2">Monitoramento em Tempo Real</h3>
+        <p class="text-white text-sm">Sensores instalados em bueiros ou áreas de risco monitoram constantemente o nível da água.</p>
+        </div>
+    </div>
+
+
+    <div class="max-w-xs bg-black rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
+        <img class="w-full h-40 object-cover" src="./assets/enchente-2.jpg" alt="Imagem do projeto">
+        <div class="p-4">
+        <h3 class="text-lg text-white font-semibold mb-2">Alertas Automáticos</h3>
+        <p class="text-white text-sm">Ao ultrapassar um limite de nível de água, o sistema dispara alertas por: Notificações em dashboard e E-mails ou SMS.</p>
+        </div>
+    </div>
+
+
+    <div class="max-w-xs bg-black rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
+        <img class="w-full h-40 object-cover" src="./assets/enchente-2.jpg" alt="Imagem do projeto">
+        <div class="p-4">
+        <h3 class="text-lg text-white font-semibold mb-2">Histórico de Dados</h3>
+        <p class="text-white text-sm">Armazenamento de leituras para análise posterior (ex: usando FIWARE + MongoDB).</p>
+        </div>
+    </div>
+
+  </div>
+  
 
 
 
@@ -88,7 +128,10 @@
 
 
 
-
+  
+  <footer class="bg-[#8ACCD5] text-black text-center p-4 mt-8">
+    <p>&copy; 2025 - Grupo moskitto | FIAP - Projeto de Detecção de Enchentes. Todos os direitos reservados.</p>
+  </footer>
 
     <script src="./js/script.js"></script>
 </body>
