@@ -1,3 +1,6 @@
+# Link para o GITHUB: https://github.com/GrupoMoskitto/FrontEnd-GS-2025
+
+
 # 🌊 Projeto de Detecção Inteligente de Enchentes - Grupo moskitto
 
 Este projeto foi desenvolvido como parte da Global Solution proposto pela FIAP, com o objetivo de apresentar soluções tecnológicas para mitigar os efeitos das enchentes no Brasil. A solução combina **IoT**, **edge computing** e **interfaces web responsivas** para oferecer **monitoramento em tempo real** e **respostas rápidas** a eventos de alagamento.
