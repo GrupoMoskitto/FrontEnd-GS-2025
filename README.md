@@ -25,7 +25,7 @@ Um sistema de monitoramento baseado em sensores de nível de água com **ESP32**
 - Pitch em vídeo explicando toda a solução
 
 ## 📽️ Pitch
-[🔗 Assista ao vídeo no YouTube](https://youtube.com/seu-link-aqui)
+[🔗 Assista ao vídeo no YouTube](https://www.youtube.com/watch?v=XKDdkLLDyxk)
 
 ## 👨‍💻 Equipe
 
